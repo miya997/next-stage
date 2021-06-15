@@ -1,0 +1,540 @@
+* {
+    padding: 0 auto;
+    margin: 0 auto;
+    user-select: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+.header-container {
+    background-image: url(img/GPTempDownload.jpg);
+    background-size: cover;
+    height: 700px;
+}
+.header-main {
+    display: flex;
+    padding-top: 70px;
+}
+.header-logo img {
+    margin-left: -50px;
+    margin-top: -30px;
+}
+.header-menu li {
+    float: left;
+    list-style: none;
+}
+.header-menu a {
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+    margin: 0 ;
+    margin-left: 60px;
+}
+.header-menu a:hover {
+    color: rgb(0, 0, 0);
+    transition: all 0.7s;
+}
+.header-menu li:hover {
+    transform: scale(1.3);
+    transition: 0.7s;
+}
+.header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    font-size: 15px;
+    line-height: 50px;
+    margin-top: 100px;
+    margin-left: 50px;
+    color: rgb(49, 49, 49);
+}
+
+@media (min-width:320px) and (max-width: 900px) {
+    .header-container {
+        background-image: url(img/GPTempDownload.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .header-main {
+        display: flex;
+        padding-top: 30px;
+    }
+    .header-logo img {
+        width: 100px;
+        height: 50px;
+        margin-left: -150px;
+        margin-top: -10px;
+    }
+    .header-menu {
+        display: none;
+    }
+    .header-title {
+        text-align: center;
+        height: 450px;
+        font-size: 10px;
+        line-height: 40px;
+        margin-top: 10px;
+        margin-left: 0px;
+        color: rgb(7, 7, 7);
+    }
+}
+
+/* ハンバーガー */
+.container {
+    display: none;
+}
+/* ハンバーガー */
+@media (min-width:320px) and (max-width: 900px) { 
+    /* ハンバーガーメニュー */
+    .container {
+        width: 100%;
+        height: 0px;
+        display: flex;
+    }
+    .hamburger-menu {
+        width: 35px;
+        height: 30px;
+        position: fixed;
+        top: 10px;
+        right: 20px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .navbar {
+        /* width: 300px; */
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        right: -500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: right 1s;
+    }
+    .change {
+        right: 0;
+    }
+    .line {
+        width: 100%;
+        height: 2px;
+        background-color: rgb(0, 0, 0);
+        transition: all 0.8s;
+    }
+    .change .line-1 {
+        transform: rotateZ(-45deg) translate(-8px, 6px);
+    }
+    .change .line-2 {
+        opacity: 0;
+    }
+    .change .line-3 {
+        transform: rotateZ(45deg) translate(-8px, -6px);
+    }
+    
+    .nav-list {
+        text-align: center;
+    }
+    .nav-item {
+        list-style: none;
+        margin:25px;
+    }
+    .nav-link {
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+        font-weight: 300px;
+        letter-spacing: 1px;
+    }
+    /* ハンバーガーメニュー */
+}
+
+/* メイン */
+.main-title {
+    margin: 200px 300px 100px;
+}
+.main-title h1 {
+    margin-bottom: 50px;
+}
+.main-title h2 {
+    line-height: 50px;
+}
+
+@media (min-width:320px) and (max-width: 900px) {
+    .main-title {
+        text-align: center;
+        margin: -300px 0px;
+    }
+    .main-title h1 {
+        display: none;
+    }
+    .main-title h2 {
+        font-size: 15px;
+        line-height: 40px;
+    }
+}
+/* メイン */
+/* ミッション */
+.mission-container {
+    background-image: url(img/IMG_84C30815F973-1.jpeg);
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+.mission-title {
+    background-color: white;
+    width: 40%;
+    float: right;
+    margin-right: 40px;
+    margin-top: 350px;
+    padding: 20px;
+    border: 1px solid black;
+}
+.mission-title h1 {
+    margin-bottom: 100px;
+}
+.mission-title h2 {
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 70px;
+}
+.mission-title p {
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 50px;
+}
+@media (min-width:320px) and (max-width: 900px) {
+    .mission-container {
+        background-image: url(img/IMG_84C30815F973-1.jpeg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 180px;
+        width: 100%;
+        margin-top: 400px;
+    }
+    .mission-title {
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        margin-right: 0px;
+        margin-top: 220px;
+        padding: 0px;
+        border: none;
+    }
+    .mission-title h1 {
+        margin-bottom: 30px;
+        font-size: 40px;
+        text-align: center;
+    }
+    .mission-title h2 {
+        text-align: center;
+        font-size: 20px;
+        line-height: 50px;
+        margin-bottom: 30px;
+    }
+    .mission-title p {
+        text-align: center;
+        line-height: 30px;
+        font-size: 13px;
+        margin-bottom: 50px;
+    }
+}
+/* ミッション */
+
+/* 自己紹介 */
+.about-container {
+    margin-top: 500px;
+}
+.about-title {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 100px;
+}
+.about-detail {
+    display: flex;
+}
+.about-detail article {
+    font-size: 25px;
+}
+@media (min-width:320px) and (max-width: 900px) {
+    .about-container {
+        margin-top: 400px;
+    }
+    .about-title {
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .about-detail {
+        display: block;
+    }
+    .about-detail img {
+        width: 100%;
+    }
+    .about-detail article {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 18px;
+    }
+}
+/* 自己紹介 */
+
+
+/* ビジネス */
+.business-container {
+    text-align: center;
+    margin-top: 150px;
+}
+.business-title {
+    font-size: 25px;
+    margin-bottom: 70px;
+}
+.business-detail {
+    display: flex;
+}
+.business-message {
+    border: 1px solid black;
+    width: 30%;
+    padding: 20px 0;
+}
+.business-message:hover {
+    background-color: rgb(111, 111, 245);
+    color: white;
+    transition: all 0.7s;
+}
+.business-message article {
+    margin-top: 20px;
+}
+@media (min-width:320px) and (max-width: 900px) {
+    .business-container {
+        text-align: center;
+        margin-top: 100px;
+    }
+    .business-title {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    .business-detail {
+        display: block;
+    }
+    .business-message {
+        border: 1px solid black;
+        width: 90%;
+        padding: 20px 0;
+        margin-top: 20px;
+    }
+    .business-message article {
+        margin-top: 10px;
+    }
+}
+/* ビジネス */
+
+
+/* リリース */
+.release-container {
+    margin-top: 150px;
+    text-align: center;
+}
+.release-title {
+    font-size: 25px;
+    margin-bottom: 70px;
+}
+.release-info {
+    display: flex;
+    font-size: 15px;
+    border-bottom: 1px solid gray;
+    width: 80%;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+}
+.release-info p {
+    width: 10%;
+
+} 
+.release-info a {
+    width: 70%;
+}
+@media (min-width:320px) and (max-width: 900px) {
+    .release-container {
+        margin-top: 100px;
+        text-align: center;
+    }
+    .release-title {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    .release-info {
+        display: block;
+        font-size: 15px;
+        border-bottom: 1px solid gray;
+        width: 80%;
+        margin-bottom: 50px;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    .release-info p {
+        width: 100%;
+        margin-bottom: 15px;
+    } 
+    .release-info a {
+        width: 90%;
+    }
+}
+/* リリース */
+
+/* お問い合わせ */
+.contact-title {
+    margin-top: 200px;
+    text-align: center;
+}
+.contact-detail {
+    display: flex;
+    margin-top: 80px;
+}
+.contact-option article {
+    font-size: 20px;
+    letter-spacing: 3px;
+    line-height: 40px;
+    color: gray;
+}
+.contact-option article:hover {
+    color: black;
+    transition: all 0.7s;
+}
+.contact-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.contact-option {
+    width: 45%;
+    text-align: center;
+}
+.contact-option a {
+    font-size: 50px;
+    color: gray;
+}
+.fa-instagram:hover {
+    color: blueviolet;
+}
+.fa-envelope:hover {
+    color: red;
+}
+.contact-menu {
+    display: flex;
+    width: 35%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.contact-menu li {
+    list-style: none;
+    font-size: 17px;
+    line-height: 40px;
+    margin-right: 30px;
+    letter-spacing: 5px;
+}
+.contact-menu li:last-child {
+    margin-right: 50px;
+}
+.contact-menu a {
+    color: gray;
+    text-decoration: none;
+}
+.contact-menu a:hover {
+    color: black;
+    transition: all 0.7s;
+}
+@media (min-width:320px) and (max-width: 900px) {
+    .contact-title {
+        margin-top: 100px;
+        text-align: center;
+    }
+    .contact-detail {
+        display: block;
+        margin-top: 50px;
+    }
+    .contact-option article {
+        display: block;
+        font-size: 15px;
+        letter-spacing: 3px;
+        line-height: 40px;
+        color: gray;
+    }
+    .contact-option {
+        width: 100%;
+    }
+    .contact-option article:hover {
+        color: black;
+        transition: all 0.7s;
+    }
+    .contact-icon {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .contact-option a {
+        font-size: 35px;
+    }
+    .fa-instagram {
+        color: blueviolet;
+    }
+    .fa-envelope {
+        color: red;
+    }
+    .contact-menu {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .contact-menu li {
+        list-style: none;
+        font-size: 15px;
+        line-height: 30px;
+        margin-right: 0px;
+        letter-spacing: 5px;
+    }
+    .contact-menu li:last-child {
+        margin-right: 0px;
+    }
+    .contact-menu li:first-child {
+        margin-top: 50px;
+    }
+    .contact-menu a {
+        color: gray;
+        text-decoration: none;
+    }
+    .contact-menu a:hover {
+        color: black;
+        transition: all 0.7s;
+    }
+}
+/* お問い合わせ */
+
+/* フッター */
+footer {
+    margin-top: 200px;
+    height: 100px;
+    background-color: black;
+}
+footer p {
+    color: white;
+    line-height: 100px;
+    text-align: center;
+    font-size: 20px;
+}
+@media (min-width:320px) and (max-width: 900px) {
+    footer {
+        margin-top: 100px;
+        height: 80px;
+        background-color: black;
+    }
+    footer p {
+        color: white;
+        line-height: 80px;
+        text-align: center;
+        font-size: 15px;
+    }
+}
+/* フッター */
